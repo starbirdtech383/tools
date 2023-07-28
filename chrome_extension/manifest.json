@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Remote Ping Status",
+  "description": "This extension gives the remote ping status of a machine",
+  "version": "1.0",
+  "permissions": ["storage", "http://*/"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  }
+}
